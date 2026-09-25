@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-httpbin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "httpbin MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-ed9b053568985d177940f2f2a083a6d77eaf8f1eb1905b7776001c03e6d67d70",
+    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
   }
 }
