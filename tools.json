@@ -1,0 +1,180 @@
+[
+  {
+    "name": "get",
+    "description": "Send a GET request to httpbin.org and receive back the echoed request: query parameters (query object), custom headers, origin IP, and User-Agent. Use for HTTP debugging.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "object"
+        },
+        "headers": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  {
+    "name": "post",
+    "description": "Send a POST request to httpbin.org with optional body and custom headers; returns the echoed request including parsed JSON body, form data, and headers.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "body": {},
+        "headers": {
+          "type": "object"
+        },
+        "content_type": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "headers",
+    "description": "Echo caller's headers.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "ip",
+    "description": "Caller IP (gateway egress).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "user_agent",
+    "description": "Caller User-Agent.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "status",
+    "description": "Return given HTTP status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "code"
+      ]
+    }
+  },
+  {
+    "name": "delay",
+    "description": "Sleep N seconds.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "seconds"
+      ]
+    }
+  },
+  {
+    "name": "uuid",
+    "description": "Random UUID.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "base64_encode",
+    "description": "Base64 encode.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "s": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "s"
+      ]
+    }
+  },
+  {
+    "name": "base64_decode",
+    "description": "Base64 decode.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "s": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "s"
+      ]
+    }
+  },
+  {
+    "name": "json_anything",
+    "description": "Fetch a sample JSON response from httpbin.org (/json). Use to verify JSON content-type handling or as a placeholder in tests.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "xml_anything",
+    "description": "Fetch a sample XML response from httpbin.org (/xml). Use to verify XML content-type handling or as a placeholder in tests.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "html_anything",
+    "description": "Fetch a sample HTML response from httpbin.org (/html). Use to verify HTML content-type handling or as a placeholder in tests.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "robots_txt",
+    "description": "Fetch a sample robots.txt from httpbin.org (/robots.txt). Use to test robots.txt parsing or as a content-type placeholder.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "image",
+    "description": "Sample image metadata (returns URL).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "format"
+      ]
+    }
+  },
+  {
+    "name": "cookies",
+    "description": "Caller cookies.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
