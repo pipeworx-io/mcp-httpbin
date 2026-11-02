@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-httpbin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "httpbin MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "httpbin",
     "gatewaySlug": "httpbin",
-    "sourceHash": "v1-333ca3498c43d122cc482fedcbeb8cae9ace1e3db47f9c8a4a0491d1094cef2c",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-ee2499f51f70ce446a886eb819e21a3ce58a017293665852320d279f94231117",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
